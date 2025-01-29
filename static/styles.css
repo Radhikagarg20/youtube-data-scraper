@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     height: 100%;
-    background: radial-gradient(rgb(88, 179, 235) 0%, rgb(157, 79, 247) 100%);
+    background: radial-gradient(rgb(88, 179, 235) 0%, rgb(251, 241, 135) 100%);
     overflow-y: auto;
 }
 
