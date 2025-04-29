@@ -4,7 +4,7 @@ import googleapiclient.discovery
 app = Flask(__name__)
 
 '''
-YOUTUBE_API_KEY = "AIzaSyDBi9L4s0CY1f-hTahq8liUQQ8skyZKwBk"
+YOUTUBE_API_KEY = "AIzaSyBuxWONaSwq6rFR398Nw1P3ZU0Cw0KRp7E"
 '''
 
 def scrape_yt_data(url, data_type):
