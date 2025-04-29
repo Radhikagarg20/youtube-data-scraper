@@ -1,9 +1,15 @@
 from flask import Flask, render_template, request, jsonify
 import googleapiclient.discovery
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 app = Flask(__name__)
 
-YOUTUBE_API_KEY = "AIzaSyBuxWONaSwq6rFR398Nw1P3ZU0Cw0KRp7E"
+# Get API key from environment variable
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 
 def scrape_yt_data(url, data_type):
     youtube = googleapiclient.discovery.build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
