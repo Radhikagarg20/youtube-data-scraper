@@ -3,9 +3,7 @@ import googleapiclient.discovery
 
 app = Flask(__name__)
 
-'''
 YOUTUBE_API_KEY = "AIzaSyBuxWONaSwq6rFR398Nw1P3ZU0Cw0KRp7E"
-'''
 
 def scrape_yt_data(url, data_type):
     youtube = googleapiclient.discovery.build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
